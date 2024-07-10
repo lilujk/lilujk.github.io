@@ -1,0 +1,18 @@
+{
+  "name": "lilukaufman-site",
+  "version": "1.0.0",
+  "description": "- Homepage - Resume - Art Portfolio (digital, traditional, crochet/knit) - Blog - About Me - Contact Me",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^4.11.5"
+  }
+}
