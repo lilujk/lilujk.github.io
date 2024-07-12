@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&display=swap');
+
+.span-photo {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    border-style: solid;
+    border-color: #E4EEF6;
+    background-color: #E4EEF6;
+}
+
+.span-photo img {
+    width: 50em;
+}
+
+.intro {
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    font-size: 2em;
+}
+
+.intro-statement {
+    justify-content: center;
+    text-align: left;
+    font-size: 3em;
+}
+
+/*https://codepen.io/tfunk2/pen/abmNxrY*/
+.flash-text {
+    height: 1.5em;
+    justify-content: center;
+    text-align: left;
+    font-size: 3em;
+}
+
+.font-change {
+    animation-name: fontChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fontChange {
+    0% {
+        font-family: 'Major Mono Display', monospace;
+    }
+    20% {
+        font-family: 'Kaushan Script', cursive;
+    }
+    40% {
+        font-family: 'Lobster', cursive;
+    }
+    60% {
+        font-family: 'Ranchers', cursive;
+    }
+    80% {
+        font-family: 'Bitter', serif;
+    }
+    100% {
+        font-family: 'Major Mono Display', monospace;
+    }
+}

@@ -1,16 +1,31 @@
 ---
-import GlobalNavbar from "../components/GlobalNavbar.astro";
+import '../../styles/global.css';
+import '../../styles/homepage.css';
+import GlobalFooter from '../components/GlobalFooter.astro';
 
+import GlobalNavbar from "../components/GlobalNavbar.astro";
 
 ---
 <html>
   <body>
+
     <GlobalNavbar></GlobalNavbar>
-    <h1>Hello, World!</h1>
+
+    <div class="span-photo">
+        <img src="../../imgs/businesslilutransparent.png" alt="Lilu Kaufman Professional Photo">
+        <div class="intro">
+            <div class="flash-text">
+                <h1 class="font-change">Hello!</h1>
+            </div>
+            <div class="intro-statement">
+                <p>I'm Lilu...</p>
+            </div>
+            <p>Some things about me: <br>&#128150; I love imagining, creating, and learning. <br>&#128187; I'm a full-stack software developer.<br>&#127912; I do art digitally and traditionally. <br> <br>&#128075; Welcome to my website!</p>
+        </div>
+    </div>
+
+    
+
+    <GlobalFooter></GlobalFooter>
   </body>
 </html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
