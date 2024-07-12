@@ -1,0 +1,39 @@
+---
+import '../../styles/global.css';
+const {skill} = Astro.props;
+---
+
+<button class="skill-display" role="button">{skill}</button>
+
+
+<style>
+
+    /*Credit: https://getcssscan.com/css-buttons-examples*/
+    .skill-display {
+        align-items: center;
+        appearance: none;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: #2d475d 0 2px 4px,#2d475d 0 7px 13px -3px,#E4EEF6 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #2d475d;
+        display: inline-flex;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 18px;
+        margin: 0.5em;
+    }
+
+</style>

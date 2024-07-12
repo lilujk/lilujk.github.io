@@ -4,6 +4,7 @@ import '../../styles/homepage.css';
 import GlobalFooter from '../components/GlobalFooter.astro';
 
 import GlobalNavbar from "../components/GlobalNavbar.astro";
+import SkillCard from '../components/SkillCard.astro';
 
 ---
 <html>
@@ -24,7 +25,33 @@ import GlobalNavbar from "../components/GlobalNavbar.astro";
         </div>
     </div>
 
-    
+    <div class="profile">
+        <div class="pre-bio">
+            <h1><b>My Skills</b></h1>
+                <div class="skill-list">
+                <SkillCard skill={"Astro.js"}/>
+                <SkillCard skill={"TypeScript"}/>
+                <SkillCard skill={"Tailwind CSS"}/>
+
+                <SkillCard skill={"Python"}/>
+                <SkillCard skill={"C++"}/>
+                <SkillCard skill={"Java"}/>
+                <SkillCard skill={"HTML/CSS"}/>
+                <SkillCard skill={"JavaScript"}/>
+
+                <SkillCard skill={"Procreate"}/>
+                <SkillCard skill={"Paint Tool SAI"}/>
+                <SkillCard skill={"FireAlpaca"}/>
+                <h2>&#10024; A <em>little</em> about me &#x2728;</h2>
+                <p>From data structures to drawing I have a passion for seeing ideas become tangible. The versatility of technology inspires me everyday pursuing my dual major of Computer Science and Information Technologies and Web Sciences at Rensselear Polytechnic Institute.</p>
+                <a href="#">Continue reading my bio...</a>
+            </div>
+        </div>
+        <div class="self-portrait">
+            <img src="../../imgs/artlilu.png" alt="Lilu Kaufman Self Portrait Photo">
+        </div>
+
+    </div>
 
     <GlobalFooter></GlobalFooter>
   </body>

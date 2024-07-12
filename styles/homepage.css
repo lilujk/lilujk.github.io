@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&display=swap');
 
+/*span-photo Section (START)*/
 .span-photo {
     width: 100%;
     margin: 0;
@@ -26,7 +27,7 @@
     font-size: 3em;
 }
 
-/*https://codepen.io/tfunk2/pen/abmNxrY*/
+/*Credit: https://codepen.io/tfunk2/pen/abmNxrY*/
 .flash-text {
     height: 1.5em;
     justify-content: center;
@@ -60,3 +61,45 @@
         font-family: 'Major Mono Display', monospace;
     }
 }
+/*span-photo Section (END)*/
+
+/*profile Section (START)*/
+
+.profile {
+    width: 100%;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    width: 30em;
+    border-radius: 50%;
+}
+
+.pre-bio {
+    width: 40%;
+    padding: 5em;
+
+    align-items: center;
+    justify-content: right;
+}
+
+.pre-bio h1 {
+    font-size: 3em;
+}
+
+.pre-bio h2 {
+    font-size: 2em;
+}
+
+.self-portrait {
+    padding: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*profile Section (END)*/
