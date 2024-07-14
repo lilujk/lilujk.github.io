@@ -83,15 +83,31 @@
     padding: 5em;
 
     align-items: center;
+    text-align: center;
     justify-content: right;
 }
 
 .pre-bio h1 {
+    text-align: left;
     font-size: 3em;
 }
 
 .pre-bio h2 {
+    text-align: left;
     font-size: 2em;
+}
+
+.pre-bio p, a{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.pre-bio a {
+    color: #858c92;
+}
+
+.pre-bio a:hover {
+    color: #2d475d;
 }
 
 .self-portrait {
@@ -100,6 +116,5 @@
     align-items: center;
     justify-content: center;
 }
-
 
 /*profile Section (END)*/
