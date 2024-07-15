@@ -1,19 +1,26 @@
 ---
 import '../../styles/global.css';
 import '../../styles/homepage.css';
-import GlobalFooter from '../components/GlobalFooter.astro';
+
+import { Image } from 'astro:assets';
+import liluBusinessTransparent from '../imgs/businesslilutransparent.png';
+import liluBusinessCasual from '../imgs/lilubusinesscasual.png';
 
 import GlobalNavbar from "../components/GlobalNavbar.astro";
 import SkillCard from '../components/SkillCard.astro';
-
+import GlobalFooter from '../components/GlobalFooter.astro';
 ---
 <html>
   <body>
 
-    <GlobalNavbar></GlobalNavbar>
+    <GlobalNavbar />
 
     <div class="span-photo">
-        <img src="./src/imgs/businesslilutransparent.png" alt="Lilu Kaufman Professional Photo">
+        <Image 
+            src={liluBusinessTransparent} 
+            alt="Lilu Kaufman in Professional Clothes"
+        />
+        <!--<img src="./src/imgs/businesslilutransparent.png" alt="Lilu Kaufman Professional Photo">-->
         <div class="intro">
             <div class="flash-text">
                 <h1 class="font-change">Hello!</h1>
@@ -32,13 +39,13 @@ import SkillCard from '../components/SkillCard.astro';
                 <SkillCard skill={"Astro.js"}/>
                 <SkillCard skill={"TypeScript"}/>
                 <SkillCard skill={"Tailwind CSS"}/>
-
+                    <br>
                 <SkillCard skill={"Python"}/>
                 <SkillCard skill={"C++"}/>
                 <SkillCard skill={"Java"}/>
                 <SkillCard skill={"HTML/CSS"}/>
                 <SkillCard skill={"JavaScript"}/>
-
+                    <br>
                 <SkillCard skill={"Procreate"}/>
                 <SkillCard skill={"Paint Tool SAI"}/>
                 <SkillCard skill={"FireAlpaca"}/>
@@ -48,7 +55,11 @@ import SkillCard from '../components/SkillCard.astro';
             </div>
         </div>
         <div class="self-portrait">
-            <img src="./src/imgs/artlilu.png" alt="Lilu Kaufman Self Portrait Photo">
+            <Image 
+                src={liluBusinessCasual} 
+                alt="Lilu Kaufman in Business Casual Clothes"
+            />
+            <!--<img src="./src/imgs/lilubusinesscasual.png" alt="Lilu Kaufman Casual">-->
         </div>
         <div class="pre-projects">
 
