@@ -28,9 +28,9 @@ import '../../styles/global.css';
     <div class="social-links">
         <span><br><b>Get in touch!</b></span>
         <div class="social-icons">
-            <Image src={GithubIcon} alt="Github Icon" width="50px" height="50px"/>
-            <Image src={InstagramIcon} alt="Instagram Icon" width="50px" height="50px"/>
-            <Image src={LinkedInIcon} alt="LinkedIn Icon" width="50px" height="50px"/>
+            <a href="https://github.com/lilujk"><Image src={GithubIcon} alt="Github Icon" width="50px" height="50px"/></a>
+            <a href="https://www.instagram.com/lilujkauf?igsh=djhzMDkxemZqNmgy&utm_source=qr"><Image src={InstagramIcon} alt="Instagram Icon" width="50px" height="50px"/></a>
+            <a href="https://www.linkedin.com/in/lilu-kaufman/"><Image src={LinkedInIcon} alt="LinkedIn Icon" width="50px" height="50px"/></a>
         </div>
     </div>
 </footer>
@@ -81,7 +81,7 @@ import '../../styles/global.css';
 	.social-links {
 		float: right;
         text-align: left;
-        padding-left: 15em;
+        padding-left: 10em;
 	}
 
     .social-icons {
@@ -89,8 +89,9 @@ import '../../styles/global.css';
         display: flex;
     }
 
-    .social-icons:hover {
-        cursor: pointer;
+    .social-icons a {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 
 </style>
