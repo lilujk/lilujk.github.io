@@ -96,7 +96,7 @@
     font-size: 2em;
 }
 
-.pre-bio p, a{
+.pre-bio p, .pre-bio a{
     text-align: center;
     font-size: 1.5em;
 }
