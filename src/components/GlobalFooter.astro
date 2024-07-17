@@ -1,24 +1,99 @@
 ---
+import GithubIcon from '../imgs/GithubIcon.png';
+import InstagramIcon from '../imgs/InstagramIcon.png';
+import LinkedInIcon from '../imgs/LinkedInIcon.png';
+
+import { Image } from 'astro:assets';
+
 import '../../styles/global.css';
 ---
 
-<div class="footer">
-    <p>Footer</p>
-</div>
+<footer>
+    <div class="name-display">
+        <p><b><em>Lilu Jean<br>Kaufman</em></b></p>
+        <span><br>&copy; 2024 lilukaufman.com<br>All rights reserved.</span>
+    </div>
+
+    <div class="insite">
+        <p><b><u>Navigation</u></b></p>
+        <div class="insite-links">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/resume/">Resume</a>
+            <a href="/portfolio/">Portfolio</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <span><br><b>Get in touch!</b></span>
+        <div class="social-icons">
+            <Image src={GithubIcon} alt="Github Icon" width="50px" height="50px"/>
+            <Image src={InstagramIcon} alt="Instagram Icon" width="50px" height="50px"/>
+            <Image src={LinkedInIcon} alt="LinkedIn Icon" width="50px" height="50px"/>
+        </div>
+    </div>
+</footer>
 
 <style>
 
-    .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #2d475d;
-    color: #E4EEF6;
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: auto;
+	footer {
+		padding: 2em;
+        padding-bottom: 8em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        background: #2d475d;
+		color: #E4EEF6;
+	}
+
+    .name-display {
+
+        text-align: left;
+        padding-right: 10em;
     }
+    
+    .name-display p {
+        font-size: 2em;
+    }
+
+    .name-display span{
+        font-size: 1em;
+    }
+
+    .insite {
+        text-align: center;
+    }
+
+    .insite-links {
+        display: flex;
+        text-align: center;
+    }
+
+    .insite-links a {
+        padding: 1em;
+        text-decoration: none;
+        font-size: 1em;
+        color: #E4EEF6;
+    }
+
+	.social-links {
+		float: right;
+        text-align: left;
+        padding-left: 15em;
+	}
+
+    .social-icons {
+        padding-top: 2em;
+        display: flex;
+    }
+
+    .social-icons:hover {
+        cursor: pointer;
+    }
+
+</style>
 
 
 </style>
