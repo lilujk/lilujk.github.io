@@ -3,12 +3,17 @@ import '../../styles/global.css';
 import '../../styles/homepage.css';
 
 import { Image } from 'astro:assets';
-import liluBusinessTransparent from '../imgs/businesslilutransparent.png';
-import liluBusinessCasual from '../imgs/lilubusinesscasual.png';
+import BusinessTransparentPhoto from '../imgs/BusinessTransparentPhoto.png';
+import BusinessCasualPhoto from '../imgs/BusinessCasualPhoto.png';
+import coffeeCup from '../imgs/CoffeeCup.png';
+import GithubIconBlue from '../imgs/GithubIcon-blue.png';
+import InstagramIconBlue from '../imgs/InstagramIcon-blue.png';
+import LinkedInIconBlue from '../imgs/LinkedInIcon-blue.png';
 
 import GlobalNavbar from "../components/GlobalNavbar.astro";
 import SkillCard from '../components/SkillCard.astro';
 import GlobalFooter from '../components/GlobalFooter.astro';
+import ContactButton from '../components/ContactButton.astro';
 ---
 <html>
   <body>
@@ -17,7 +22,7 @@ import GlobalFooter from '../components/GlobalFooter.astro';
 
     <div class="span-photo">
         <Image 
-            src={liluBusinessTransparent} 
+            src={BusinessTransparentPhoto} 
             alt="Lilu Kaufman in Professional Clothes"
         />
         <div class="intro">
@@ -55,12 +60,29 @@ import GlobalFooter from '../components/GlobalFooter.astro';
         </div>
         <div class="self-portrait">
             <Image 
-                src={liluBusinessCasual} 
+                src={BusinessCasualPhoto} 
                 alt="Lilu Kaufman in Business Casual Clothes"
             />
         </div>
-        <div class="pre-projects">
+    </div>
 
+    <div class="projects">
+
+    </div>
+
+    <div id="contact">
+        <p><b>Let's chat, get in <em>contact!</em> &#9749;</b></p>
+        <div class="social-icons">
+            <div class="icons">
+                <a href="https://github.com/lilujk"><Image src={GithubIconBlue} alt="Github Icon" width="64" height="64"/></a>
+                <a href="https://www.linkedin.com/in/lilu-kaufman/"><Image src={LinkedInIconBlue} alt="LinkedIn Icon" width="64" height="64"/></a>
+                <a href="https://www.instagram.com/lilujkauf?igsh=djhzMDkxemZqNmgy&utm_source=qr"><Image src={InstagramIconBlue} alt="Instagram Icon" width="64" height="64"/></a>
+            </div>
+            <div class="icon-labels">
+                <a href="https://github.com/lilujk"><ContactButton socialName={"Github"} /></a>
+                <a href="https://www.linkedin.com/in/lilu-kaufman/"><ContactButton socialName={"LinkedIn"} /></a>
+                <a href="https://www.instagram.com/lilujkauf?igsh=djhzMDkxemZqNmgy&utm_source=qr"><ContactButton socialName={"Instagram"} /></a>
+            </div>
         </div>
     </div>
 

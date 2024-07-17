@@ -1,0 +1,29 @@
+---
+import '../../styles/global.css';
+const {socialName} = Astro.props;
+---
+
+<button class="contact-button" role="button" >{socialName}</button>
+
+<style>
+
+    .contact-button {
+        padding: 0.6em 2em;
+        border-style: solid;
+        border-color: #2d475d;
+        border-radius: 0em;
+        border-width: 0;
+        cursor: pointer;
+        color: #2d475d;
+        user-select: none;
+        touch-action: manipulation;
+        background-color: white;
+        font-size: 1em;
+        box-shadow: #2d475d 0 2px 4px,#2d475d 0 7px 13px -3px,#E4EEF6 0 -3px 0 inset;
+    }
+
+    .contact-button:hover {
+        box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+    }
+
+</style>
