@@ -1,7 +1,9 @@
 ---
-import '../../../styles/global.css';
+import '../../styles/global.css';
+import '../../styles/resume.css';
 import GlobalFooter from '../../components/GlobalFooter.astro';
 import GlobalNavbar from "../../components/GlobalNavbar.astro";
+import ContactButton from '../../components/ContactButton.astro';
 
 ---
 
@@ -10,9 +12,14 @@ import GlobalNavbar from "../../components/GlobalNavbar.astro";
     
     <GlobalNavbar />
 
-    <p>Resume</p>
+    <a class="download-button" href="../../pdfs/RESUME.pdf" download="Lilu-Kaufman-Resume"><ContactButton socialName={"Download Lilu's Resume"}/></a>
 
-    <!-- Resume -->
+    <iframe 
+      class="pdf"
+      src="../../pdfs/RESUME.pdf"
+      width="100%" height="1000"
+    >
+    </iframe>
 
     <GlobalFooter />
 
