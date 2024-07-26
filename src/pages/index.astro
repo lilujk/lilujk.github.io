@@ -9,6 +9,10 @@ import coffeeCup from '../imgs/CoffeeCup.png';
 import GithubIconBlue from '../imgs/GithubIcon-blue.png';
 import InstagramIconBlue from '../imgs/InstagramIcon-blue.png';
 import LinkedInIconBlue from '../imgs/LinkedInIcon-blue.png';
+import SoapboxLogo from '../imgs/SoapboxLogo.png';
+import HelpHerStemLogo from '../imgs/HelpHerSTEMLogo.png';
+import LCOSLogo from '../imgs/LCOSLogo.png';
+import CentTrackLogo from '../imgs/CentTrackLogo.png';
 
 import GlobalNavbar from "../components/GlobalNavbar.astro";
 import SkillCard from '../components/SkillCard.astro';
@@ -67,12 +71,73 @@ import ContactButton from '../components/ContactButton.astro';
     </div>
 
     <div class="projects">
-        <!-- Soapbox -->
-        <!-- Help Her STEM -->
-        <!-- LCOS -->
-        <!-- CentTrack -->
+        <h1><b>My Projects</b></h1>
 
-        <!-- Coming Soon: LUVU, Remix -->
+        <div class="project">
+            <div class="project-logo">
+                <Image 
+                src={SoapboxLogo}
+                alt="Soapbox Logo"
+                width="250"
+                height="250"
+                />
+            </div>
+            <div class="project-desc">
+                <h2>Soap&#183;box Hosting</h2>
+                <h3><em>Software Engineer Intern</em></h3>
+                <p>Developed podcast hosting platform using Astro JS, prisma ORM, and background job workers that have reached production.</p>
+                <a href="https://www.soapbox.host/">View This Project!</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-logo">
+            <Image 
+                src={HelpHerStemLogo}
+                alt="Help Her STEM Logo"
+                width="250"
+                height="250"
+            />
+            </div>
+            <div class="project-desc">
+                <h2>Help Her STEM: Anonomyous Advice Forum</h2>
+                <h3><em>Full-Stack Developer/Concept Lead</em></h3>
+                <p>Designed and implemented an anonymous advice forum for underrepresented gender minorities in STEM using basic HTML and CSS, Balsamiq mock-ups, and dynamic JSON file reading/writing.</p>
+                <a href="https://github.com/RPI-ITWS/ITWS1100-S24-team1">View This Project!</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-logo">
+            <Image 
+                src={LCOSLogo}
+                alt="LCOS Logo"
+                width="250"
+                height="250"
+            />
+            </div>
+            <div class="project-desc">
+                <h2>LCOS: Lethal Company Open Source</h2>
+                <h3><em>Developer/UX Designer</em></h3>
+                <p>Created custom modifications, UX designs, and 3D modeled for the popular video game "Lethal Company."</p>
+                <a href="https://github.com/LCOS-Lethal-Company-Open-Source/LCOS-Designs">View This Project!</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-logo">
+            <Image 
+                src={CentTrackLogo}
+                alt="CentTrack Logo"
+                width="250"
+                height="250"
+            />
+            </div>
+            <div class="project-desc">
+                <h2>CentTrack: Financial Tracker</h2>
+                <h3><em>Developer/ Concept Lead</em></h3>
+                <p>Designed educational financial tracker with a 4-person team using React Native during 24+ hour hackathon, awarded 'Best Mobile App.'</p>
+                <a href="https://devpost.com/software/track-xnat9j">View This Project!</a>
+            </div>
+        </div>
+        <h1><em>...and many more coming soon!</em></h1>
     </div>
 
     <div id="contact">
