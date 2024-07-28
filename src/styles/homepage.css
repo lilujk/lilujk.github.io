@@ -10,12 +10,13 @@
     background-color: #E4EEF6;
 }
 
-.span-photo img {
-    width: 45em;
+.span-photo-img {
+    width: 50%;
     height: auto;
 }
 
 .intro {
+    width: 50%;
     justify-content: left;
     align-items: center;
     position: relative;
@@ -207,3 +208,7 @@
 }
 
 /*contact Section (END)*/
+
+@media (max-width: 1000px) {
+
+}
