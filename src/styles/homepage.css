@@ -37,6 +37,15 @@
     font-size: 3em;
 }
 
+@media (min-width:1000px){
+    .flash-text {
+        height: 1.5em;
+        justify-content: center;
+        text-align: left;
+        font-size: 2.5em;
+    }
+}
+
 .font-change {
     animation-name: fontChange;
     animation-duration: 2s;
