@@ -13,6 +13,7 @@ import SoapboxLogo from '../imgs/SoapboxLogo.png';
 import HelpHerStemLogo from '../imgs/HelpHerSTEMLogo.png';
 import LCOSLogo from '../imgs/LCOSLogo.png';
 import CentTrackLogo from '../imgs/CentTrackLogo.png';
+import AccessACityLogo from '../imgs/accessakey.png';
 
 import GlobalNavbar from "../components/GlobalNavbar.astro";
 import SkillCard from '../components/SkillCard.astro';
@@ -45,15 +46,20 @@ import ContactButton from '../components/ContactButton.astro';
         <div class="pre-bio">
             <h1><b>My Skills</b></h1>
                 <div class="skill-list">
+                <SkillCard skill={"React"}/>
+                <SkillCard skill={"React Native"}/>
                 <SkillCard skill={"Astro.js"}/>
-                <SkillCard skill={"TypeScript"}/>
+                    <br>
+                <SkillCard skill={"HTML/CSS"}/>
                 <SkillCard skill={"Tailwind CSS"}/>
+                <SkillCard skill={"JavaScript"}/>
+                <SkillCard skill={"TypeScript"}/>
                     <br>
                 <SkillCard skill={"Python"}/>
                 <SkillCard skill={"C++"}/>
                 <SkillCard skill={"Java"}/>
-                <SkillCard skill={"HTML/CSS"}/>
-                <SkillCard skill={"JavaScript"}/>
+                <SkillCard skill={"Firebase"}/>
+                <SkillCard skill={"Prisma ORM"}/>
                     <br>
                 <SkillCard skill={"Procreate"}/>
                 <SkillCard skill={"Paint Tool SAI"}/>
@@ -76,22 +82,6 @@ import ContactButton from '../components/ContactButton.astro';
 
         <div class="project">
             <div class="project-logo">
-                <Image 
-                src={SoapboxLogo}
-                alt="Soapbox Logo"
-                width="250"
-                height="250"
-                />
-            </div>
-            <div class="project-desc">
-                <h2>Soap&#183;box Hosting</h2>
-                <h3><em>Software Engineer Intern</em></h3>
-                <p>Developed podcast hosting platform using <u>Astro JS</u>, <u>Prisma ORM</u>, and background job workers.</p>
-                <a href="https://www.soapbox.host/">View This Project!</a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-logo">
             <Image 
                 src={HelpHerStemLogo}
                 alt="Help Her STEM Logo"
@@ -109,22 +99,6 @@ import ContactButton from '../components/ContactButton.astro';
         <div class="project">
             <div class="project-logo">
             <Image 
-                src={LCOSLogo}
-                alt="LCOS Logo"
-                width="250"
-                height="250"
-            />
-            </div>
-            <div class="project-desc">
-                <h2>LCOS: Lethal Company Open Source</h2>
-                <h3><em>Developer/UX Designer</em></h3>
-                <p>Created custom modifications, UX design in <u>Procreate</u>, and 3D modeled in <u>Blender</u> for the popular video game "Lethal Company."</p>
-                <a href="https://github.com/LCOS-Lethal-Company-Open-Source/LCOS-Designs">View This Project!</a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-logo">
-            <Image 
                 src={CentTrackLogo}
                 alt="CentTrack Logo"
                 width="250"
@@ -136,6 +110,38 @@ import ContactButton from '../components/ContactButton.astro';
                 <h3><em>Developer/ Concept Lead</em></h3>
                 <p>Designed a financial tracker with a 4-person team using <u>React Native</u> during a 24+ hour hackathon, awarded 'Best Mobile App.'</p>
                 <a href="https://devpost.com/software/track-xnat9j">View This Project!</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-logo">
+            <Image 
+                src={AccessACityLogo}
+                alt="AccessACity Logo"
+                width="250"
+                height="250"
+            />
+            </div>
+            <div class="project-desc">
+                <h2>AccessACity</h2>
+                <h3><em>Developer/ Concept Lead</em></h3>
+                <p>Designed an inclusive event planner with a 3-person team using <u>React Native</u> during a 24+ hour hackathon, awarded 'Ship Fast, Ship Often - Build a Payworthy MVP in a Weekend '</p>
+                <a href="https://devpost.com/software/accessacity">View This Project!</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-logo">
+            <Image 
+                src={LCOSLogo}
+                alt="LCOS Logo"
+                width="250"
+                height="250"
+            />
+            </div>
+            <div class="project-desc">
+                <h2>LCOS: Lethal Company Open Source</h2>
+                <h3><em>Developer/UX Designer</em></h3>
+                <p>Created custom modifications, UX design in <u>Procreate</u>, and 3D modeled in <u>Blender</u> for the popular video game "Lethal Company."</p>
+                <a href="https://github.com/LCOS-Lethal-Company-Open-Source/LCOS-Designs">View This Project!</a>
             </div>
         </div>
         <h1><em>...and many more coming soon!</em></h1>
