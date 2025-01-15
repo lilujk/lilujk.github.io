@@ -43,24 +43,28 @@ import ContactButton from '../components/ContactButton.astro';
     </div>
 
     <div class="profile">
+        <div class="self-portrait">
+            <Image 
+                src={BusinessCasualPhoto} 
+                alt="Lilu Kaufman in Business Casual Clothes"
+            />
+        </div>
         <div class="pre-bio">
             <h1><b>My Skills</b></h1>
                 <div class="skill-list">
                 <SkillCard skill={"React"}/>
                 <SkillCard skill={"React Native"}/>
                 <SkillCard skill={"Astro.js"}/>
-                    <br>
                 <SkillCard skill={"HTML/CSS"}/>
                 <SkillCard skill={"Tailwind CSS"}/>
                 <SkillCard skill={"JavaScript"}/>
                 <SkillCard skill={"TypeScript"}/>
-                    <br>
                 <SkillCard skill={"Python"}/>
                 <SkillCard skill={"C++"}/>
                 <SkillCard skill={"Java"}/>
+                <SkillCard skill={"mySQL"}/>
                 <SkillCard skill={"Firebase"}/>
                 <SkillCard skill={"Prisma ORM"}/>
-                    <br>
                 <SkillCard skill={"Procreate"}/>
                 <SkillCard skill={"Paint Tool SAI"}/>
                 <SkillCard skill={"FireAlpaca"}/>
@@ -68,12 +72,6 @@ import ContactButton from '../components/ContactButton.astro';
                 <p>From data structures to drawing I have a passion for seeing ideas become tangible. The versatility of technology inspires me everyday pursuing my dual major of Computer Science and Information Technologies and Web Sciences at Rensselear Polytechnic Institute.</p>
                 <a href="/about/">Continue reading my bio...</a>
             </div>
-        </div>
-        <div class="self-portrait">
-            <Image 
-                src={BusinessCasualPhoto} 
-                alt="Lilu Kaufman in Business Casual Clothes"
-            />
         </div>
     </div>
 

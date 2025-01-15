@@ -11,17 +11,17 @@
 }
 
 .span-photo-img {
-    width: 50%;
+    width: 725px;
     height: auto;
 }
 
 .intro {
-    width: 50%;
+    flex: 1;
     justify-content: left;
     align-items: center;
     position: relative;
     font-size: 1.8em;
-    overflow: hidden;
+    margin: 1em;
 }
 
 .intro-statement {
@@ -36,15 +36,6 @@
     justify-content: center;
     text-align: left;
     font-size: 3em;
-}
-
-@media (min-width:768px){
-    .flash-text {
-        height: 1.5em;
-        justify-content: center;
-        text-align: left;
-        font-size: 2.5em;
-    }
 }
 
 .font-change {
@@ -78,32 +69,20 @@
     width: 100%;
     padding-top: 5em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-@media (min-width:768px){
-    .profile {
-        width: 100%;
-        padding-top: 5em;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .profile img{
     width: 25em;
-    height: auto;
+    height: 25em;
     border-radius: 50%;
 }
 
 .pre-bio {
     width: 40%;
     padding: 5em;
-
     align-items: center;
     text-align: center;
     justify-content: right;
@@ -231,6 +210,23 @@
 
 /*contact Section (END)*/
 
-@media (max-width: 1000px) {
+@media (max-width:1000px){
+    .flash-text {
+        height: 1.5em;
+        justify-content: center;
+        text-align: left;
+        font-size: 2.5em;
+    }
 
+    .span-photo-img {
+        display: none;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+    
+    .pre-bio {
+        justify-content: center;
+    }
 }
