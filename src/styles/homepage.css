@@ -4,10 +4,16 @@
 .span-photo {
     width: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     border-style: solid;
     border-color: #E4EEF6;
     background-color: #E4EEF6;
+}
+
+.span-photo-img-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .span-photo-img {
