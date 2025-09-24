@@ -19,6 +19,8 @@
 .span-photo-img {
     width: 800px;
     height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .intro {
