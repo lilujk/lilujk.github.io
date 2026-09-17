@@ -1,45 +1,67 @@
 ---
 import '../../styles/global.css';
 import '../../styles/about.css';
+
+import { Image } from 'astro:assets';
+
 import GlobalFooter from '../../components/GlobalFooter.astro';
 import GlobalNavbar from "../../components/GlobalNavbar.astro";
 
+import CasualPhoto from "../../imgs/CasualLiluWithPuckmanPhoto.png";
+import GHCPhoto from "../../imgs/GHCJumbotronPhoto.png";
 ---
 
 <html>
   <body>
 
     <GlobalNavbar />
-    <div class="main">
-        <!-- Personal Story/ Motivations -->
 
-        <br>
-        <br>
-        <br>
+    <div class="about-section">
 
-        <p> Hello! My name is Lilu Kaufman, I am a full-stack software developer. At present I am interested in 
-          biotechnology and financial technology, expanding my skill set, and my understanding of AI integration. </p>
+      <h1>About Me</h1>
+      <p>You're asking about little old me? I'm flattered.</p>
 
-        <p>From data structures to drawing I have a passion for seeing ideas become tangible. 
-            The versatility of technology inspires me everyday pursuing my dual major of Computer Science and Information Technologies 
-            and Web Sciences at Rensselear Polytechnic Institute. Currently I am a third-year student. </p>
+      <hr>
 
-        <p> Beyond the classroom, I consistently contribute to clubs I believe make a positive impact to the community. 
-            At the moment this includes but is not limited to the Union Programming and Activities Committee as their concerts division treasurer 
-            and a volunteer; the Association of Computing Machinery - Women in Computing 
-            Chapter as a mentor and member; and the Hack-RPI hackathon organization committee as an organizer and volunteer. </p>
-            
-        <p> I hope to combine my creativity and love for programming to advance the current capabilities of technologies in the goal of helping 
-            others. I thoroughly enjoy problem-solving and aim to use my imagination to allow me to view issues from new perspectives. 
-            I thrive on collaborating and value fresh POVs. My approach to issues involves addressing obstacles head-on utilizing 
-            effective communication. I aspire to create a balance between my love for STEM and the arts while having a positive impact on communities worldwide.</p>
+      <div class="about-story">
+        <div class="about-story-left">
+          <h2>My &lt;/Story&gt; </h2>
+          <p>From data structures to drawing I have a passion for seeing ideas become tangible.  The versatility of technology inspires me everyday pursuing  my dual major of Computer Science and Information Technologies  and Web Sciences at Rensselear Polytechnic Institute.</p>
+          <p>Beyond the classroom, I consistently contribute to clubs I believe make a positive impact to the community. </p>
+        </div>
+        <div class="about-story-right">
+          <Image 
+            src={CasualPhoto}
+            alt="Photo of Lilu Kaufman With Puckman"
+            width="525"
+            height="500"
+          />
+        </div>
+      </div>
 
+      <hr>
 
-        <br>
-        <br>
-        <br>
-        
-    </div>  
+      <div class="about-values">
+        <div class="about-values-left">
+          <Image 
+            src={GHCPhoto}
+            alt="Photo of Lilu Kaufman On Jumbotron At Grace Hopper"
+            width="525"
+            height="500"
+          />
+        </div>
+        <div class="about-values-right">
+          <h2>My &lt;/Values&gt; </h2>
+          <p>I hope to combine my creativity and love for programming to advance the  current capabilities of technologies in the goal of helping  others. I thoroughly enjoy problem-solving and aim to use my imagination to allow me to view issues from new perspectives. </p>
+          <p>I thrive on collaborating and value fresh POVs. My approach  to issues involves addressing obstacles head-on utilizing  effective communication. I aspire to create a balance  between my love for STEM and the arts while having a positive impact on  communities worldwide.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="about-end">
+      <h1>TLDR; I work hard and play hard.</h1>
+    </div>
 
     <GlobalFooter />
 

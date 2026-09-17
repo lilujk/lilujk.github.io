@@ -1,9 +1,107 @@
 
-.main {
-    padding: 5em;
+h1 {
+    padding-top: 0.5em;
+    font-size: 4em;
+}
+
+h2 {
+    padding-top: 0.5em;
+    font-size: 3em;
+}
+
+p {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 1.5em;
     text-align: center;
 }
 
-.main p {
-    font-size: 1.3em;
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4em 0 4em;
+}
+
+.about-story {
+    margin: 0 4em 4em 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-story-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-story-left h2 {
+    text-align: center;
+}
+
+.about-story-left p {
+    text-align: left;
+    padding: 0 0 0 2em;
+}
+
+.about-story-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-story-right img {
+    border-radius: 25px;
+}
+
+.about-values {
+    margin: 0 4em 4em 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-values-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-values-left img {
+    border-radius: 25px;
+}
+
+.about-values-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-values-right p {
+    text-align: right;
+    padding: 0 0 0 2em;
+}
+
+.about-values-right h2 {
+    text-align: center;
+}
+
+.about-end {
+    margin: 0 0 10em 0;
+}
+
+.about-end h1 {
+    padding-top: 0.5em;
+    font-size: 4em;
+    text-align: center;
 }
