@@ -128,53 +128,6 @@
 
 /*profile Section (END)*/
 
-/*Projects Section (START)*/
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects h1 {
-    padding-top: 2em;
-    font-size: 2.5em;
-}
-
-.project {
-    display: flex;
-    padding-top: 2em;
-}
-
-.project-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30em;
-}
-
-.project-desc {
-    text-align: left;
-    padding-left: 2em;
-    width: 30em;
-}
-
-.project-desc h2 {
-    font-size: 2.5em;
-}
-
-.project-desc h3, .project-desc a, .project-desc p{
-    font-size: 1.5em;
-}
-
-.project-desc a {
-    font-size: 1.5em;
-    color: #858c92;
-}
-
-/*Projects Section (END)*/
-
 /*contact Section (START)*/
 
 #contact {

@@ -1,0 +1,85 @@
+---
+import '../../styles/global.css';
+import '../../styles/projects.css';
+
+import { Image } from 'astro:assets';
+
+import GlobalFooter from '../../components/GlobalFooter.astro';
+import GlobalNavbar from "../../components/GlobalNavbar.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import ContactButton from '../../components/ContactButton.astro';
+import HelpHerStemLogo from '../../imgs/HelpHerSTEMLogo.png';
+import LCOSLogo from '../../imgs/LCOSLogo.png';
+import CentTrackLogo from '../../imgs/CentTrackLogo.png';
+import AccessACityLogo from '../../imgs/accessakey.png';
+
+---
+
+<html>
+  <body>
+    
+    <GlobalNavbar />
+
+    <div class="projects">
+
+        <h1>Projects</h1>
+        <p>Listed below are projects ranging from personal to professional. Yours could be next.</p>
+
+        <ProjectCard 
+            src={AccessACityLogo} 
+            alt="AccessACity Logo" 
+            width={300} 
+            height={300}
+            projectTitle="AccessACity"
+            projectPosition="Developer/ Concept Lead"
+            projectDesc="Designed an inclusive event planner with a 3-person team using React Native during a 24+ hour hackathon, awarded 'Ship Fast, Ship Often - Build a Payworthy MVP in a Weekend '"
+            projectLink="https://devpost.com/software/accessacity"
+            year="2025"
+        />
+
+        <ProjectCard 
+            src={HelpHerStemLogo} 
+            alt="Help Her STEM Logo" 
+            width={300} 
+            height={300}
+            projectTitle="Help Her STEM: Anonomyous Advice Forum"
+            projectPosition="Full-Stack Developer/ Concept Lead"
+            projectDesc="Built and executed an anonymous advice forum for underrepresented gender minorities with professor support in STEM using React, Tailwind CSS, and an SQL database."
+            projectLink="https://github.com/RPI-ITWS/ITWS1100-S24-team1"
+            year="2024"
+        />
+
+        <ProjectCard 
+            src={CentTrackLogo} 
+            alt="CentTrack Logo" 
+            width={300} 
+            height={300}
+            projectTitle="CentTrack: Financial Tracker"
+            projectPosition="Developer/ Concept Lead"
+            projectDesc="Designed a financial tracker with a 4-person team using React Native during a 24+ hour hackathon, awarded 'Best Mobile App.'"
+            projectLink="https://devpost.com/software/track-xnat9j"
+            year="2023"
+        />
+
+        <ProjectCard 
+            src={LCOSLogo} 
+            alt="LCOS Logo" 
+            width={300} 
+            height={300}
+            projectTitle="LCOS: Lethal Company Open Source"
+            projectPosition="Developer/UX Designer"
+            projectDesc="Created custom modifications, UX design in Procreate, and 3D modeled in Blender for the popular video game 'Lethal Company'."
+            projectLink="https://github.com/LCOS-Lethal-Company-Open-Source/LCOS-Designs"
+            year="2023"
+        />
+
+    </div>
+
+    <div class="projects-end">
+        <p>Looking for more? Check out my <a href="https://github.com/lilujk">Github</a>.</p>
+    </div>
+    
+    <GlobalFooter />
+
+  </body>
+</html>

@@ -1,0 +1,122 @@
+---
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata; // for local images imported at build time
+  alt: string;
+  width?: number;
+  height?: number;
+  projectTitle?: string;
+  projectPosition?: string;
+  projectDesc?: string;
+  projectLink?: string;
+  year?: string;
+  class?: string;
+}
+
+const { src, alt, width, height, projectTitle, projectPosition, projectDesc, projectLink, year, class: className } = Astro.props;
+---
+
+<div class="project">
+    <span class="project-year">{year}</span>
+    <div class="project-logo">
+    <Image 
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+    />
+    </div>
+    <div class="project-desc">
+        <h2>{projectTitle}</h2>
+        <h3><em>{projectPosition}</em></h3>
+        <p>{projectDesc}</p>
+        <a href={projectLink}>View This Project!</a>
+    </div>
+</div>
+
+<style>
+
+    .project {
+        position: relative;
+        display: flex;
+        padding-top: 2em;
+
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        margin: 1em;
+        padding: 1.5em;
+
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .project::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+            120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.05) 30%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.05) 70%,
+            transparent 100%
+        );
+        transform: skewX(-20deg);
+        pointer-events: none;
+        transition: left 0.75s ease;
+    }
+
+    .project:hover::before {
+        left: 150%;
+    }
+
+    .project:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+    }
+
+    .project-year {
+        position: absolute;
+        font-size: 2em;
+        font-weight: 600;
+        color: #415668;
+    }
+
+    .project-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-desc {
+        text-align: left;
+        padding-left: 2em;
+        width: 30em;
+    }
+
+    .project-desc h2 {
+        font-size: 2em;
+    }
+
+    .project-desc h3, .project-desc a, .project-desc p{
+        font-size: 1.5em;
+    }
+
+    .project-desc a {
+        font-size: 1.5em;
+        color: #858c92;
+    }
+
+    .project-desc p {
+        line-height: 1;
+    }
+
+</style>
