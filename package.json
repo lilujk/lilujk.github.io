@@ -1,7 +1,7 @@
 {
   "name": "lilukaufman-site",
   "version": "1.0.0",
-  "description": "- Homepage - Resume - Art Portfolio (digital, traditional, crochet/knit) - Blog - About Me - Contact Me",
+  "description": "- Homepage - Resume - Portfolio - Blog - About Me - Contact Me",
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
@@ -16,5 +16,13 @@
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.11.5",
     "sharp": "^0.34.4"
-  }
+  },
+  {
+    "pnpm": {
+      "onlyBuiltDependencies": [
+        "esbuild",
+        "sharp"
+      ]
+    }
+}
 }
